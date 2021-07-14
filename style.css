@@ -1,0 +1,185 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* float設定による入り込みをブロックするための記述 */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+header {
+  width: 100%; /* 横幅100% */
+  height: 70px; /* 高さ70px */
+  background-color: #ec715f; /* 背景色をカラーコードで指定 */
+}
+
+.heading {
+  float: left; /* 要素を左寄せ */
+}
+
+.heading img {
+  height: 70px; /* 高さ70px */
+}
+
+nav {
+  width: 960px; /* 横幅960px */
+  height: 70px; /* 高さ70px */
+  margin: 0 auto; /* 中央寄せ */
+}
+
+.nav-list {
+  width: 560px; /* 横幅56px */
+  float: right; /* 要素を右寄せ */
+}
+
+.nav-list-item {
+  margin: 0 30px; /* 上下に0pxの隙間、左右に30pxずつの隙間を発生させる。 */
+  list-style: none; /* li使用時に発生する黒丸を削除 */
+  line-height: 70px; /* 行の高さを70pxに設定し、縦方向に中央寄せで文字を配置する */
+  text-align: center; /* 横方向に中央寄せで文字を配置する。*/
+  float: left; /* 要素を左寄せ（複数ある場合は左から順番に敷き詰める）*/
+  color: white; /* 文字色を白に変更 */
+}
+
+.nav-list-item a {
+  text-decoration: none; /* リンクに設定した場合発生する文字の装飾を解除。 */
+  color: white; /* リンクを設定すると文字が青色になってしまうので、白に変更 */
+}
+
+.main-visual {
+  width: 100%; /* 横幅いっぱい */
+  height: 650px; /* 高さ650px */
+  background-image: url(img/mv.png); /* 背景画像を設定、imgフォルダ内のmv.pngを使用 */
+  background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
+  background-position: center; /* 背景画像を中央に配置 */
+}
+
+.main-visual-text {
+  width: 650px; /* 横幅650px */
+  height: 650px; /* 高さ650px */
+  margin: 0 auto; /* 中央寄せ */
+  text-align: center; /* 横方向に中央寄せで文字を配置する。*/
+  color: white; /* 文字色を白に変更 */
+}
+.main-visual-title {
+  padding-top: 220px; /* 上方向に220pxの余白を設定。背景色はないので空白が発生 */
+  font-size: 60px; /* 文字のサイズを60pxに設定 */
+}
+
+.main-visual-subtitle {
+  font-size: 18px; /* 文字のサイズを18pxに設定 */
+  line-height: 38px; /* 行の高さを38pxに設定、文字の大きさが18pxなので上下に10pxの余白が発生する*/
+}
+
+main {
+  width: 100%; /* 横幅いっぱい */
+}
+
+.portfolio {
+  padding: 90px 0 90px 0; /* 余白を上下に90pxずつ、左右には余白無し */
+  text-align: center; /* .portfolio内の文字はすべて横方向に中央寄せなのでまとめて設定 */
+}
+
+.border_line {
+  width: 60px; /* 横幅60px */
+  height: 8px; /* 高さ8px */
+  border-bottom: 3px solid pink; /* 要素の下に3pxのpink色の直線を引く */
+  margin: 0 auto; /* 中央寄せ */
+}
+
+.main-text {
+  padding: 30px 0; /* 上下に30pxの余白を設定、左右の余白はなしに設定 */
+}
+
+.main-contents {
+  width: 930px; /* 横幅930px */
+  margin: 0 auto; /* 中央寄せ */
+}
+.main-contents-box {
+  width: 300px; /* 横幅300px */
+  height: 300px; /* 高さ300px */
+  float: left; /* 要素を左詰めで設定 */
+  margin: 5px; /* 四方に隙間を5px設定 */
+  background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
+  background-position: center; /* 背景画像を中央に配置 */
+}
+
+.desk {
+  background-image: url(img/sketch.jpg); /* 背景画像をimgフォルダ内のsketch.jpgに設定 */
+}
+
+.pc-blue {
+  background-image: url(img/websuku.png); /* 背景画像をimgフォルダ内のwebsuku.pngに設定 */
+}
+
+.write-board {
+  background-image: url(img/write.jpg); /* 背景画像をimgフォルダ内のwrite.jpgに設定 */
+}
+
+.pc-yellow {
+  background-image: url(img/webcamp.png); /* 背景画像をimgフォルダ内のwebcamp.pngに設定 */
+}
+
+.talk {
+  background-image: url(img/talk.jpg); /* 背景画像をimgフォルダ内のtalk.jpgに設定 */
+}
+
+.pc-pink {
+  background-image: url(img/webcamp-mother.png); /* 背景画像をimgフォルダ内のwebcamp-mother.pngに設定 */
+}
+.profile {
+  padding: 90px 0 90px 0;
+  text-align: center;
+  margin: 30px 0;
+}
+.border_line {
+  width: 60px; /* 横幅60px */
+  height: 8px; /* 高さ8px */
+  border-bottom: 3px solid pink; /* 要素の下に3pxのpink色の直線を引く */
+  margin: 0 auto; /* 中央寄せ */
+}
+.main-text {
+  padding: 30px 0;
+}
+.main-contents {
+  width: 800px;
+  margin: 0 auto;
+}
+.main-contents-box {
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin: 30px;
+  background-size: cover;
+  background-position: center;
+}
+.portrait {
+  background-image: url(img/my-icon.jpg);
+}
+
+.heading {
+  height: 30px;
+  text-align: left;
+  font-size: 20px;
+}
+.heading {
+  height: 30px;
+  text-align: left;
+  font-size: 20px;
+}
+footer {
+  width: 100%; /* 横幅100% */
+  height: 60px; /* 高さ60px */
+  text-align: center; /* 横方向に中央寄せで文字を配置する。*/
+  line-height: 60px; /* 行の高さを60pxに設定し、縦方向に中央寄せで文字を配置する */
+  background-color: #ec715f; /* 背景色をカラーコードで指定 */
+}
+
+.footer-text {
+  color: white; /* 文字色を白に設定 */
+}
